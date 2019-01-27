@@ -1,0 +1,21 @@
+---
+name: web-server
+box: ubuntu/bionic64
+ip: "192.168.56.111"
+memory: 512
+cpus: 1
+provider: virtualbox
+
+nodes: 1
+
+languages:
+  - php
+
+dbms:
+  - mysql
+
+databases:
+  - phpmyadmin
+
+webserver: 
+  - apache2
